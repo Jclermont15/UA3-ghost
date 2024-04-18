@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-family:'Courier New', Courier, monospace
+}
+
+img { 
+  width: 100%;
+  height: auto;
+  opacity: 0.50;
+}
+</style>
+<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <!-- include ar.js for A-Frame -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://wallpapercave.com/wp/wp2748277.jpg" width="1920" height="1080">
+  <div class ="center">
+
+<p id="textePrincipal">Voulez-vous appuyer sur moi pour commencer votre expérience surnaturel?</p>
+
+<script>
+var textePrincipal = document.getElementById("textePrincipal");
+
+
+textePrincipal.addEventListener("click", function() {
+    textePrincipal.textContent = "Êtes-vous sûr??";
+
+textePrincipal.addEventListener("click", function() {
+    textePrincipal.textContent = "Prenez-votre marqueur 'Hiro' et allez-y!";
+    
+    textePrincipal.addEventListener("click", function() {
+        window.location.href = "ghost.html";
+    });
+});
+});
+
+</script>
+</body>
+</html>
