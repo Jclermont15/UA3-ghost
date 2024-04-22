@@ -15,6 +15,14 @@
           <a-obj-model src="#ghost" scale="1 1 1" position='0 0 0.9'></a-obj-model>
         <a-marker-camera preset='hiro'></a-marker-camera>
   </a-scene>
-</script>
+  <audio id="audio" src="projet_ghost.mp3"></audio>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    var audio = document.getElementById("audio");
+    audio.play()
+});
+  </script>
 </body>
 </html>

@@ -12,26 +12,34 @@
   width: 100%;
   text-align: center;
   font-size: 50px;
-  font-family:'Courier New', Courier, monospace
+  font-family:'Courier New', Courier, monospace;
 }
 
 img { 
-  width: 100%;
-  height: auto;
   opacity: 0.50;
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  margin: 0px auto;
+  background-image: cover;
 }
+
+body {
+  display: block;
+  margin: 0px;
+}
+
 </style>
 <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-    <!-- include ar.js for A-Frame -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar.js"></script>
+    
 </head>
 <body>
 
 <div class="container">
-  <img src="https://wallpapercave.com/wp/wp2748277.jpg" width="1920" height="1080">
+  <img src="BG1.png" alt="background-image" width="1920" height="1080">
   <div class ="center">
-
 <p id="textePrincipal">Voulez-vous appuyer sur moi pour commencer votre expérience surnaturel?</p>
 
 <script>
@@ -49,6 +57,8 @@ textePrincipal.addEventListener("click", function() {
     });
 });
 });
+
+
 
 </script>
 </body>
